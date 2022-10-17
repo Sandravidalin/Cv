@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    zoom: 100%;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    grid-gap: 1rem;
+    filter: drop-shadow(0 0 0.4rem black);
+}
+
+.personal,
+.skills,
+.languages {
+    padding: 1rem;
+    line-height: 3rem;
+}
+
+.left,
+.experience,
+.education {
+    background-color: white;
+
+
+
+}
+
+.left-image {
+    position: relative;
+    width: 100%;
+
+}
+
+.left-image img {
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    zoom: 100%;
+    width: 75%;
+}
+
+
+.left-image h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 5rem;
+    color: rgb(230, 74, 100);
+    font-style: oblique;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+.experience,
+.education {
+    line-height: 3;
+    padding: 2rem;
+}
+
+
+.experience ul {
+    margin: 2rem 0;
+
+}
+
+
+.date {
+    color: rgb(230, 74, 100);
+}
+
+.current {
+    background-color: rgb(230, 101, 123);
+    color: white;
+    padding: 0.3rem;
+    border-radius: 3px;
+}
+
+
+.education ul {
+    margin: 2rem 0;
+
+}
+
+i {
+    color: rgb(230, 74, 100);
+    gap: rem;
+
+}
+
+footer {
+    background-color: rgb(230, 101, 123);
+    padding: 2rem 0;
+    text-align: center;
+    line-height: 2;
+    color: white;
+}
+
+.social-icons a {
+    text-decoration: none;
+
+}
+
+footer i {
+    color: white;
+
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+/* Min responsiva version*/
+@media screen and(max-width:768px) {
+    body {
+        width: 100%;
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+        display: block;
+
+    }
+
+    .left-image img {
+        width: 100%;
+        zoom: 100%;
+        display: flex;
+    }
+
+
+    .left-image h2 {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        display: flex;
+    }
+
+    main {
+        width: 100%;
+        display: block;
+    }
+
+    footer {
+        width: 100%;
+
+    }
+
+    .social-icons a,
+    .footer i {
+        width: 100%;
+
+    }
+
+}
